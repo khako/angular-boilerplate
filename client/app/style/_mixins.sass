@@ -1,0 +1,13 @@
+@import "_variables.sass"
+
+=breakpoint($size)
+  @if map-has-key($breakpoints, $size)
+    @media (min-width: #{map-get($breakpoints, $size)})
+      @content
+  @else
+    @media (min-width: $size)
+      @content
+
+=keyframes($animationName)
+  @keyframes #{$animationName}
+    @content

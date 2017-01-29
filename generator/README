@@ -1,0 +1,11 @@
+yarn component -- --name toto
+  create a new folder inside client/app/components/ with the folowing architecture:
+  componentName/
+    componentName.js
+    componentName.component.js
+    componentName.controller.js
+    componentName.html
+    componentName.scss
+
+yarn component -- --name toto --parent ../common
+  create a new component in common directory
